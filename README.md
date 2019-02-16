@@ -9,13 +9,26 @@ See more details in our [blog post](https://blog.openai.com/better-language-mode
 ## Installation
 
 Download the model data (needs [gsutil](https://cloud.google.com/storage/docs/gsutil_install)):
+
+Linux
 ```
 sh download_model.sh 117M
+```
+Windows:
+```
+download_model.bat 117M
 ```
 
 Install python packages:
 ```
 pip3 install -r requirements.txt
+```
+
+Set alias for python 3 (most likely you have both from gsutils installation).
+
+In Powershell:
+```
+set-alias python3 c:\<YourPython3Path>\python.exe
 ```
 
 ## Unconditional sample generation
